@@ -1,9 +1,9 @@
-# Unity Build dosyaları için güvenli binary tanımlamaları
-*.assets.resS filter=lfs diff=lfs merge=lfs -text binary
-*.resource filter=lfs diff=lfs merge=lfs -text binary
-*.assets filter=lfs diff=lfs merge=lfs -text binary
-*.exe filter=lfs diff=lfs merge=lfs -text binary
-*.dll filter=lfs diff=lfs merge=lfs -text binary
+# Tüm büyük binary dosyaları doğrudan LFS'e aktar
+*.assets.resS filter=lfs diff=lfs merge=lfs -text
+*.resource filter=lfs diff=lfs merge=lfs -text
+*.assets filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
 
-# Klasör bazlı genel kural (opsiyonel ama garantidir)
-klasor3/** filter=lfs diff=lfs merge=lfs -text binary
+# Çıktı klasörünü özel olarak koru
+Proxima Protokolu/** filter=lfs diff=lfs merge=lfs -text
