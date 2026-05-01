@@ -1,0 +1,9 @@
+
+# klasor3 (Build) içindeki devasa dosyalar
+klasor3/**/*.assets.resS filter=lfs diff=lfs merge=lfs -text
+klasor3/**/*.resource filter=lfs diff=lfs merge=lfs -text
+klasor3/**/*.assets filter=lfs diff=lfs merge=lfs -text
+klasor3/**/*.exe filter=lfs diff=lfs merge=lfs -text
+klasor3/**/*.dll filter=lfs diff=lfs merge=lfs -text
+# Görseldeki dosya için özel LFS kuralı
+**/*.assets.resS filter=lfs diff=lfs merge=lfs -text
